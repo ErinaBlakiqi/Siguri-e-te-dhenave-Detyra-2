@@ -1,5 +1,12 @@
 DETAILED DESCRIPTION ON HOW TO EXECUTE THE PROGRAM
-1. Columnar Transpotion (Encryption)
+
+1. Trifid Cipher (Encryption)
+   - First we run the program
+   - Enter a secret keyword
+   - Enter the desired plaintext
+   - See the encripted text
+   
+2. Columnar Transpotion (Encryption)
    - First we run the program
    - Write the desired plaintext
    - Write a keyword
@@ -21,6 +28,7 @@ DESCRIPTION OF ALGORITHMS
       7. Display of the encrypted text for the user.
 
 EXAMPLES FROM EXCECUTION
+
 <img width="796" alt="TrifidCipher" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/155022915/8a8ffe1c-1048-4e21-91ed-e1ce0c763a8b">
 
 
