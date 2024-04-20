@@ -20,6 +20,10 @@ DESCRIPTION OF ALGORITHMS
       6. Utilization of the found coordinates in the cube to encrypt the plaintext, based on the structure and logic of the Trifid Cipher.
       7. Display of the encrypted text for the user.
 
+EXAMPLES FROM EXCECUTION
+<img width="796" alt="TrifidCipher" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/155022915/8a8ffe1c-1048-4e21-91ed-e1ce0c763a8b">
+
+
 2. Columnar Transposition (Encryption)
      Columnar transposition is a technique used in cryptography to encrypt and decrypt messages. Here's a step-by-step explanation of how columnar transposition works:
      1. Chose a Keyword or Keyphrase: The first step is to choose a keyword or keyphrase that will be used to determine the order in which the columns are arranged. For              example, if the keyword is "CRYPTO", each letter of the keyword represents the order in which the columns will be arranged.
