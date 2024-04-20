@@ -31,6 +31,7 @@ DESCRIPTION OF ALGORITHMS
 
 EXAMPLES FROM EXCECUTION
 1. Columnar Transposition (Encryption)
+   
    <img width="695" alt="image" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/95575593/8bfc2794-3cac-4e47-941b-e9b24bd835e4">
    Compare the outcome from the code with the outcome from a online encryption code
    <img width="793" alt="image" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/95575593/5234c34f-05c8-4f1e-a6f1-d82d366630f4">
