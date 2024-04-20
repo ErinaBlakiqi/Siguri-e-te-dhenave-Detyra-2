@@ -5,46 +5,46 @@ import java.util.Scanner;
 
 public class ColumnarTransposition {
     public static void main(String[] args) {
-        //inicializojme skanerin
+        //initialize the scanner
         Scanner scanner = new Scanner(System.in);
 
-        //Marrim plaintext nga perdoruesi
-        System.out.println("Shkruani plaintext: ");
+        //Get plaintext from user
+        System.out.println("Write plaintext: ");
         String plain = scanner.nextLine();
 
-        //Marrim keyword nga perdoruesi
-        System.out.println("Shkruani keyword: ");
+        //Get keyword from user
+        System.out.println("Write keyword: ");
         String key = scanner.nextLine();
 
-        //Enkriptojme dhe e kthejme tekstin e enkriptum
+        //Encrypt text
         String ciphertext = encrypt(plain, key);
-        System.out.println("Teksti i enkriptuar: " + ciphertext);
+        System.out.println("Encrypted text: " + ciphertext);
 
     }
 
     public static String encrypt(String plaintext, String key) {
-        //largojme whitespaces, tabs etj nga keyword
+        //remove whitespaces, tabs from keyword
         key = key.replaceAll("\\s+", "");
-        //kalkulojme sa rows kemi mi pas
+        //calculate rows
         int rows = (plaintext.length() + key.length() -1) / key.length();
 
-        //krijojme matricen qe ka mi mbajt karakteret e plaintext
+        //create the matrix that will hold the plaintext
         char[][] plainToMatrix = new char[rows][key.length()];
-        //inicializojme nje pointer me mbikqyr mbushjen e matrices me plaintext
+        //inicialize a pointer that will monitor the matrix while its being filled with the plaintext
         int pointer = 0;
 
-        //me ane te for loop e mbushim matricen me karakteret e plain text
+        //fill the matrix will plaintext
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < key.length(); c++) {
                 if (pointer < plaintext.length()) {
                     plainToMatrix[r][c] = plaintext.charAt(pointer++);
                 } else {
-                    plainToMatrix[r][c] = 'x'; //nese nuk ka karaktere sa eshte matrica e mbushim me 'x'
+                    plainToMatrix[r][c] = 'x'; //if there are fewer characters then the matrix can hold then fill with 'x'
                 }
             }
         }
 
-        //e sortojme keywordin me ane te rregullave te columnar transposition
+        //sort the keyword with Columnar Transposition rules
         char[] keySort = key.toCharArray();
         Arrays.sort(keySort);
         int[] indexSort = new int[key.length()];
@@ -52,7 +52,7 @@ public class ColumnarTransposition {
             indexSort[i] = key.indexOf(keySort[i]);
         }
 
-        //e lexon kolone per kolone sipas keyword dhe e vendosim ne string builder
+        //read the columns according to keyword
         StringBuilder ciphertext = new StringBuilder();
         for (int c = 0; c < key.length(); c++) {
             int col = indexSort[c];
@@ -61,7 +61,7 @@ public class ColumnarTransposition {
             }
         }
 
-        //e kthejme ciphertext-in ne string the e kthejme ne main.
+        //convert cipertext to string and return to main
         return ciphertext.toString();
     }
 }
