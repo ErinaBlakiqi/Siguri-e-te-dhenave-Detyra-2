@@ -33,7 +33,8 @@ EXAMPLES FROM EXCECUTION
 
 
 2. Columnar Transposition (Encryption)
-     Columnar transposition is a technique used in cryptography to encrypt and decrypt messages. Here's a step-by-step explanation of how columnar transposition works:
+
+   Columnar transposition is a technique used in cryptography to encrypt and decrypt messages. Here's a step-by-step explanation of how columnar transposition works:
      1. Chose a Keyword or Keyphrase: The first step is to choose a keyword or keyphrase that will be used to determine the order in which the columns are arranged. For              example, if the keyword is "CRYPTO", each letter of the keyword represents the order in which the columns will be arranged.
      2. Write the Message in Rows: Write the message to be encrypted in rows, typically left-to-right and top-to-bottom, filling up rows before starting a new one. If the            message doesn't fill up a row completely, fill the remaining spaces with placeholder characters, usually "X" or "Z".
      3. Arrange Columns According to Keyword: Write down the keyword above the rows, in alphabetical order. Each letter of the keyword represents a column.
