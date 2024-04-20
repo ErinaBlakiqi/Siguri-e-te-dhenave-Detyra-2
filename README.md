@@ -1,5 +1,5 @@
 DETAILED DESCRIPTION ON HOW TO EXECUTE THE PROGRAM
-1. Columnar Transpotion
+1. Columnar Transpotion (Encryption)
    - First we run the program
    - Write the desired plaintext
    - Write a keyword
