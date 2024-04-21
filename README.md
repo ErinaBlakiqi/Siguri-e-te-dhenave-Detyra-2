@@ -22,7 +22,7 @@ DESCRIPTION OF ALGORITHMS
     The Trifid Cipher is a cryptographic technique that combines elements of substitution and transposition ciphers to encrypt messages.
     The key points provided are:
       1. Preparation of the alphabet for encryption, including a secret key provided by the user.
-      2. Arranging the alphabet to create a random permutation of letters.
+      2. Arranging the remaining alphabet after the secret keyword.
       3. Creation of a three-dimensional cube to represent the prepared alphabet for encryption.
       4. Retrieve the plaintext from the input.
       5. Identification of coordinates for each letter from the plaintext using the three-dimensional cube.
@@ -50,7 +50,8 @@ DESCRIPTION OF ALGORITHMS
 EXAMPLES FROM EXCECUTION
 1. Trifid Ciper (Encryption)
 
-   <img width="796" alt="TrifidCipher" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/155022915/8a8ffe1c-1048-4e21-91ed-e1ce0c763a8b">
+ <img width="796" alt="trifidddddddd" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/155022915/09a1c032-9238-40d8-9310-42b2a4bb1a68">
+
 
    
 2. Columnar Transposition (Encryption)
