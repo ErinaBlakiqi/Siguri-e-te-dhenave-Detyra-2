@@ -90,8 +90,7 @@ EXAMPLES FROM EXCECUTION
 
  2. Trifid Ciper (Decryption)
 
-     <img width="796" alt="trifidddddddd" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/f60782f1-a7d7-4554-a5c4-6a25c5a4c7bd
-">
+     <img width="796" alt="trifidddddddd" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/f60782f1-a7d7-4554-a5c4-6a25c5a4c7bd">
 
 3. Columnar Transposition (Encryption)
    
