@@ -6,12 +6,19 @@ DETAILED DESCRIPTION ON HOW TO EXECUTE THE PROGRAM
    - Enter the desired plaintext
    - See the encripted text
    
-2. Columnar Transpotion (Encryption)
+2. Columnar Transposition (Encryption)
    - First we run the program
    - Write the desired plaintext
    - Write a keyword
    - Call the encrypt function
    - See the encripted text
+  
+3. Columnar Transposition (Decryption)
+   - First we run the program
+   - Write the ciphertext
+   - Write the keyword
+   - Call the decrypt function
+   - See the decripted text
 
 
 
