@@ -47,16 +47,23 @@ DESCRIPTION OF ALGORITHMS
 2.  TRIFID CIPHER (Decryption)
  Decryption in the Trifid Cipher involves reversing the encryption process.
  The key points provided are:
-      1.Input the Ciphertext and Keyword: First, the user needs to input the ciphertext and the secret keyword used for encryption.
-      2.Preparation of the Alphabet: The same steps for preparing the alphabet are followed as in encryption. This involves combining the secret keyword with the remaining alphabet and appending a special character (in this case, '#').
-      3.Creation of the Three-Dimensional Cube: A three-dimensional cube (or array) is created to represent the prepared alphabet for decryption.This cube will serve as the reference for finding the coordinates of letters.
-      4.Retrieving Coordinates of Ciphertext Letters: Similar to encryption, the ciphertext is scanned to find the coordinates of each letter within the three-dimensional cube. 
+
+    1.Input the Ciphertext and Keyword: First, the user needs to input the ciphertext and the secret keyword used for encryption.
+
+    2.Preparation of the Alphabet: The same steps for preparing the alphabet are followed as in encryption. This involves combining the secret keyword with the remaining alphabet and appending a special character (in this case, '#').
+
+    3.Creation of the Three-Dimensional Cube: A three-dimensional cube (or array) is created to represent the prepared alphabet for decryption.This cube will serve as the reference for finding the coordinates of letters.
+
+    4.Retrieving Coordinates of Ciphertext Letters: Similar to encryption, the ciphertext is scanned to find the coordinates of each letter within the three-dimensional cube. 
   Each letter will have three coordinates (x, y, z) within the cube.
 The coordinates of each letter in the ciphertext might not be in their original order due to the encryption process. These coordinates need to be shuffled back into the correct order before decryption can proceed.
-      5.Shuffle the Coordinates (Reordering):The coordinates obtained from the ciphertext are likely shuffled compared to their original order during encryption. To decrypt the message, these coordinates must be rearranged into the correct order.
+
+     5.Shuffle the Coordinates (Reordering):The coordinates obtained from the ciphertext are likely shuffled compared to their original order during encryption. To decrypt the message, these coordinates must be rearranged into the correct order.
 The shuffling of coordinates during encryption is a crucial aspect of the Trifid Cipher, adding complexity and making decryption without the correct key more challenging.
-      6.Decrypting the Ciphertext: Once the coordinates of all letters in the ciphertext are found, the corresponding letters from the cube are retrieved based on these coordinates. This essentially reverses the encryption process, using the coordinates to retrieve the original letters.
-      7.Displaying the Decrypted Text: Finally, present the decrypted text to the user for reading
+
+     6.Decrypting the Ciphertext: Once the coordinates of all letters in the ciphertext are found, the corresponding letters from the cube are retrieved based on these coordinates. This essentially reverses the encryption process, using the coordinates to retrieve the original letters.
+
+     7.Displaying the Decrypted Text: Finally, present the decrypted text to the user for reading
 
 4. Columnar Transposition (Encryption)
 
