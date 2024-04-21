@@ -105,4 +105,19 @@ EXAMPLES FROM EXCECUTION
 
 ![Screenshot 2024-04-21 020244](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121455234/e311984a-5f6e-4089-ba18-9eb853923e6c)
 
+TRIFID CIPHER
+
+In the Trifid folder there is the code for executing the Trifid Cipher in JavaFX
+
+EXAMPLES FROM EXCECUTION
+Encrypt:
+![image](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/19b4b8d3-8e07-47b9-ace9-6d5b13a4fe5a)
+
+Decrypt:
+![image](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/159d94f6-0b16-4ead-a81a-d1fa01f048c9)
+
+
+
+
+
 
