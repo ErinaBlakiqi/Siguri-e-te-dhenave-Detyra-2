@@ -54,12 +54,12 @@ EXAMPLES FROM EXCECUTION
 
 
 2. Columnar Transposition (Decryption)
-3. 
-   Columnar transposition decryption is a process used to decrypt messages encrypted using the columnar transposition technique. Here's a step-by-step explanation of how columnar transposition decryption works:
 
-      1.Arrange Columns According to Keyword: To begin decryption, the columns of the ciphertext are arranged according to the alphabetical order of the keyword used during encryption. Each letter of the keyword represents the order in which the columns will be arranged.
-      2.Inverse Rearrange Columns: After arranging the columns according to the keyword, the columns are inverse rearranged to their original order. This involves restoring the original positions of the columns based on the alphabetical order of the keyword.
-      3.Read the Decrypted Message: Once the columns are rearranged to their original order, the decrypted message can be obtained by reading the columns from left to right and top to bottom.
+   Columnar transposition decryption is a process used to decrypt messages encrypted using the columnar transposition technique. Here's a step-by-step explanation of how columnar     transposition decryption works:
+
+      1. Arrange Columns According to Keyword: To begin decryption, the columns of the ciphertext are arranged according to the alphabetical order of the keyword used during           encryption. Each letter of the keyword represents the order in which the columns will be arranged.
+      2. Inverse Rearrange Columns: After arranging the columns according to the keyword, the columns are inverse rearranged to their original order. This involves restoring            the original positions of the columns based on the alphabetical order of the keyword.
+      3. Read the Decrypted Message: Once the columns are rearranged to their original order, the decrypted message can be obtained by reading the columns from left to right             and top to bottom.
 Placeholder characters used during encryption (such as "X" or "Z") should be ignored during decryption.
 
 EXAMPLES FROM EXECUTION
