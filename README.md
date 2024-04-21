@@ -110,13 +110,16 @@ TRIFID CIPHER
 In the Trifid folder there is the code for executing the Trifid Cipher in JavaFX
 
 EXAMPLES FROM EXCECUTION
+
 Encrypt:
-![image](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/19b4b8d3-8e07-47b9-ace9-6d5b13a4fe5a)
+
+![Webp net-resizeimage (2)](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/cf9813b0-ab7d-47ed-9c77-c7ffd1c626b6)
+
 
 Decrypt:
 
-![Webp net-resizeimage](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/26d8e545-f93b-40b0-8c89-3ec4aa2bf0d7)
 
+![Webp net-resizeimage (1)](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/89d100ba-0d7c-41e8-ba66-272f72651bd5)
 
 
 
