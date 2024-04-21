@@ -122,4 +122,33 @@ public class TrifidCipher {
         }
         return false;
     }
+    private static int[] findPositions(String inputText, char[][][] polybiusCube) {
+        int [] positions = new int [inputText.length()*3];
+        int pos=0;
+        for (char letter : inputText.toCharArray()) {
+            for (int i = 0; i < polybiusCube.length; i++) {
+                for (int j = 0; j < polybiusCube[i].length; j++) {
+                    for (int k = 0; k < polybiusCube[i][j].length; k++) {
+                        if (polybiusCube[i][j][k] == letter) {
+                            positions[pos]=i;
+                            positions[pos+1]=j;
+                            positions[pos+2]=k;
+                            pos+=3;
+                        }
+                    }
+                }
+            }
+        }
+        return positions;
+    }
+    private static String decryptMessage(int[] positions, char[][][] polybiusCube, int ciphertextLength) {
+        StringBuilder decryptedMessage = new StringBuilder();
+        for (int i = 0; i < ciphertextLength; i++) {
+            int x = positions[i];
+            int y = positions[i + ciphertextLength];
+            int z = positions[i + 2 * ciphertextLength];
+            decryptedMessage.append(polybiusCube[x][y][z]);
+        }
+        return decryptedMessage.toString();
+    }
 }
