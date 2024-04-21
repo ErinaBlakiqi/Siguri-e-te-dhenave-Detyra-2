@@ -1,126 +1,116 @@
-DETAILED DESCRIPTION ON HOW TO EXECUTE THE PROGRAM
+# Cryptographic Techniques Implementation
 
-1. Trifid Cipher (Encryption)
-   - First we run the program
-   - Enter a secret keyword
-   - Enter the desired plaintext
-   - See the encripted text
-2. Trifid Cipher (Decryption)
-   - First we run the program
-   - Enter a secret keyword
-   - Enter the desired plaintext
-   - See the encripted text
-   
-   
-2. Columnar Transposition (Encryption)
-   - First we run the program
-   - Write the desired plaintext
-   - Write a keyword
-   - Call the encrypt function
-   - Get the encrypted text
-   - Call the decrypt function
-   - See the Decrypted Text
-  
-3. Columnar Transposition (Decryption)
-   - First we run the program
-   - Write the ciphertext
-   - Write the keyword
-   - Call the decrypt function
-   - See the decripted text
+This repository contains implementations of various cryptographic algorithms including the Trifid Cipher and Columnar Transposition, both in encryption and decryption forms.
 
+## Table of Contents
+- [1. Trifid Cipher](#1-trifid-cipher)
+  - [Encryption](#encryption)
+  - [Decryption](#decryption)
+- [2. Columnar Transposition](#2-columnar-transposition)
+  - [Encryption](#encryption-1)
+  - [Decryption](#decryption-1)
+- [Execution Examples](#execution-examples)
 
+## 1. Trifid Cipher
 
-DESCRIPTION OF ALGORITHMS
-1. TRIFID CIPHER (Encryption)
-   
-    This algorithm implements the Trifid Cipher encryption technique in Java.
-    The Trifid Cipher is a cryptographic technique that combines elements of substitution and transposition ciphers to encrypt messages.
-    The key points provided are:
-      1. Preparation of the alphabet for encryption, including a secret key provided by the user.
-      2. Arranging the remaining alphabet after the secret keyword.
-      3. Creation of a three-dimensional cube to represent the prepared alphabet for encryption.
-      4. Retrieve the plaintext from the input.
-      5. Identification of coordinates for each letter from the plaintext using the three-dimensional cube.
-      6. Utilization of the found coordinates in the cube to encrypt the plaintext, based on the structure and logic of the Trifid Cipher.
-      7. Display of the encrypted text for the user.
+### Encryption
 
-2.  TRIFID CIPHER (Decryption)
- Decryption in the Trifid Cipher involves reversing the encryption process.
- The key points provided are:
+The Trifid Cipher encryption process involves:
+1. Running the program and entering a secret keyword.
+2. Entering the plaintext that needs to be encrypted.
+3. The program then displays the encrypted text.
 
-    1.Input the Ciphertext and Keyword: First, the user needs to input the ciphertext and the secret keyword used for encryption.
+### Decryption
 
-    2.Preparation of the Alphabet: The same steps for preparing the alphabet are followed as in encryption. This involves combining the secret keyword with the remaining alphabet and appending a special character (in this case, '#').
+The Trifid Cipher decryption reverses the encryption steps:
+1. Input the encrypted text and the secret keyword.
+2. Prepare the alphabet as in the encryption process.
+3. Create the three-dimensional cube.
+4. Retrieve and reorder the coordinates of each letter to decrypt.
+5. Display the decrypted text.
 
-    3.Creation of the Three-Dimensional Cube: A three-dimensional cube (or array) is created to represent the prepared alphabet for decryption.This cube will serve as the reference for finding the coordinates of letters.
+## 2. Columnar Transposition
 
-    4.Retrieving Coordinates of Ciphertext Letters: Similar to encryption, the ciphertext is scanned to find the coordinates of each letter within the three-dimensional cube. 
-  Each letter will have three coordinates (x, y, z) within the cube.
-The coordinates of each letter in the ciphertext might not be in their original order due to the encryption process. These coordinates need to be shuffled back into the correct order before decryption can proceed.
+### Encryption
 
-     5.Shuffle the Coordinates (Reordering):The coordinates obtained from the ciphertext are likely shuffled compared to their original order during encryption. To decrypt the message, these coordinates must be rearranged into the correct order.
-The shuffling of coordinates during encryption is a crucial aspect of the Trifid Cipher, adding complexity and making decryption without the correct key more challenging.
+Steps to encrypt using Columnar Transposition:
+1. Run the program and enter the plaintext.
+2. Enter a keyword which determines the order of columns.
+3. Encrypt the text by rearranging columns based on the keyword.
+4. Display the encrypted text.
 
-     6.Decrypting the Ciphertext: Once the coordinates of all letters in the ciphertext are found, the corresponding letters from the cube are retrieved based on these coordinates. This essentially reverses the encryption process, using the coordinates to retrieve the original letters.
+### Decryption
 
-     7.Displaying the Decrypted Text: Finally, present the decrypted text to the user for reading
+Decryption of Columnar Transposition involves:
+1. Inputting the encrypted text and the keyword.
+2. Rearranging the columns to their original order based on the keyword.
+3. Reading the decrypted text from left to right.
 
-4. Columnar Transposition (Encryption)
+# Description of Algorithms
 
-   Columnar transposition is a technique used in cryptography to encrypt and decrypt messages. Here's a step-by-step explanation of how columnar transposition works:
-     1. Chose a Keyword or Keyphrase: The first step is to choose a keyword or keyphrase that will be used to determine the order in which the columns are arranged. For              example, if the keyword is "CRYPTO", each letter of the keyword represents the order in which the columns will be arranged.
-     2. Write the Message in Rows: Write the message to be encrypted in rows, typically left-to-right and top-to-bottom, filling up rows before starting a new one. If the            message doesn't fill up a row completely, fill the remaining spaces with placeholder characters, usually "X" or "Z".
-     3. Arrange Columns According to Keyword: Write down the keyword above the rows, in alphabetical order. Each letter of the keyword represents a column.
-     4. Rearrange Columns: Rearrange the columns of the message according to the alphabetical order of the keyword. This means if the keyword is "CRYPTO", the columns would          be arranged in the order of "C", "O", "P", "R", "T", "Y".
-     5. Read the Encrypted Message: Read the rearranged columns from left to right and top to bottom to get the encrypted message.
+## Trifid Cipher
 
-5. Columnar Transposition (Decryption)
-   
-      Columnar transposition decryption is a process used to decrypt messages encrypted using the columnar transposition technique. Here's a step-by-step explanation of how           columnar transposition decryption works:
-      1. Arrange Columns According to Keyword: To begin decryption, the columns of the ciphertext are arranged according to the alphabetical order of the keyword used                 during encryption. Each letter of the keyword represents the order in which the columns will be arranged.
-      2. Inverse Rearrange Columns: After arranging the columns according to the keyword, the columns are inverse rearranged to their original order. This involves                    restoring the original positions of the columns based on the alphabetical order of the keyword.
-      3. Read the Decrypted Message: Once the columns are rearranged to their original order, the decrypted message can be obtained by reading the columns from left to                right and top to bottom.
-      Placeholder characters used during encryption (such as "X" or "Z") should be ignored during decryption.
-       
+### Encryption
+The Trifid Cipher combines substitution and transposition ciphers to encrypt messages. The encryption process includes the following steps:
+1. **Preparation of the Alphabet:** Start with a secret key provided by the user to prepare the alphabet.
+2. **Arranging the Remaining Alphabet:** Place the remaining alphabet after the secret keyword.
+3. **Creation of a Three-Dimensional Cube:** Use the prepared alphabet to create a three-dimensional cube.
+4. **Retrieval of Plaintext:** Input the plaintext to be encrypted.
+5. **Identification of Coordinates:** Find coordinates for each letter of the plaintext within the cube.
+6. **Utilization of Coordinates:** Encrypt the plaintext using the identified coordinates based on the Trifid Cipher logic.
+7. **Display Encrypted Text:** Show the encrypted text to the user.
 
-EXAMPLES FROM EXCECUTION
-1. Trifid Ciper (Encryption)
+### Decryption
+Decryption reverses the encryption steps:
+1. **Input Ciphertext and Keyword:** Users enter the ciphertext and the secret keyword.
+2. **Preparation of the Alphabet:** Follow the same steps as in encryption, including adding a special character ('#').
+3. **Creation of a Three-Dimensional Cube:** Create a cube to represent the alphabet for decryption.
+4. **Retrieving Coordinates:** Locate the coordinates of each letter from the ciphertext within the cube.
+5. **Shuffle the Coordinates:** Reorder the shuffled coordinates into their correct order.
+6. **Decrypting the Ciphertext:** Use the coordinates to find the corresponding letters in the cube.
+7. **Displaying the Decrypted Text:** Present the decrypted text.
 
- <img width="796" alt="trifidddddddd" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/155022915/09a1c032-9238-40d8-9310-42b2a4bb1a68">
+## Columnar Transposition
 
- 2. Trifid Ciper (Decryption)
+### Encryption
+Columnar Transposition is used to encrypt messages by rearranging columns of text:
+1. **Choose a Keyword or Keyphrase:** Select a keyword that will dictate the column order.
+2. **Write the Message in Rows:** Fill rows with the message, adding placeholder characters if necessary.
+3. **Arrange Columns According to Keyword:** Place the keyword alphabetically above the rows, each letter representing a column.
+4. **Rearrange Columns:** Sort the message columns according to the keyword's alphabetical order.
+5. **Read the Encrypted Message:** Compile the encrypted message by reading the rearranged columns.
 
-     <img width="796" alt="trifidddddddd" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/f60782f1-a7d7-4554-a5c4-6a25c5a4c7bd">
+### Decryption
+Decryption of messages using Columnar Transposition:
+1. **Arrange Columns According to Keyword:** Sort the ciphertext columns according to the keyword used in encryption.
+2. **Inverse Rearrange Columns:** Restore columns to their original order.
+3. **Read the Decrypted Message:** Read the message from left to right, ignoring placeholders.
 
-3. Columnar Transposition (Encryption)
-   
-   <img width="695" alt="image" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/95575593/8bfc2794-3cac-4e47-941b-e9b24bd835e4">
-   
-   Compare the outcome from the code with the outcome from a online encryption code
-   
-   <img width="793" alt="image" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/95575593/5234c34f-05c8-4f1e-a6f1-d82d366630f4">
-   
-
-4. Columnar Transposition (Decryption)
-
-![Screenshot 2024-04-21 020244](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121455234/e311984a-5f6e-4089-ba18-9eb853923e6c)
-
-TRIFID CIPHER
-
-In the Trifid folder there is the code for executing the Trifid Cipher in JavaFX
-
-EXAMPLES FROM EXCECUTION
-
-Encrypt:
-
-![Webp net-resizeimage (2)](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/cf9813b0-ab7d-47ed-9c77-c7ffd1c626b6)
+This comprehensive guide outlines the necessary steps to execute Trifid Cipher and Columnar Transposition ciphers both for encryption and decryption.
 
 
-Decrypt:
+## Execution Examples
 
+### Trifid Cipher
 
-![Webp net-resizeimage (1)](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/89d100ba-0d7c-41e8-ba66-272f72651bd5)
+#### Encryption
+![Trifid Cipher Encryption Example](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/155022915/09a1c032-9238-40d8-9310-42b2a4bb1a68)
 
+#### Decryption
+![Trifid Cipher Decryption Example](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/f60782f1-a7d7-4554-a5c4-6a25c5a4c7bd)
 
+### Trifid Cipher Execution Examples
+#### Encrypt
+![Encrypt Example](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/cf9813b0-ab7d-47ed-9c77-c7ffd1c626b6)
 
+#### Decrypt
+![Decrypt Example](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/89d100ba-0d7c-41e8-ba66-272f72651bd5)
 
+### Columnar Transposition
+
+#### Encryption
+![Columnar Transposition Encryption Example](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/95575593/8bfc2794-3cac-4e47-941b-e9b24bd835e4)
+![Comparison with Online Tool](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/95575593/5234c34f-05c8-4f1e-a6f1-d82d366630f4)
+
+#### Decryption
+![Columnar Transposition Decryption Example](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121455234/e311984a-5f6e-4089-ba18-9eb853923e6c)
