@@ -99,6 +99,15 @@ public class TrifidCipher {
         for (char f : cipher) {
             System.out.print(f);
         }
+        String encryptedText = new String(cipher);
+
+        int[] positions = findPositions(encryptedText,kubi);
+        String decryptedMessage = decryptMessage(positions, kubi,encryptedText.length());
+
+        // Shfaq mesazhin e dekriptuar
+        System.out.println("");
+        System.out.println("Decrypted Message:");
+        System.out.println(decryptedMessage);
     }
 
     private static boolean charExists(char[][][] kubi, char c) {
