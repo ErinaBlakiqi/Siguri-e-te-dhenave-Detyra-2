@@ -77,15 +77,15 @@ public class TrifidCipher {
                 }
             }
         }
-         // for (int i = 0; i < a; i++) {
-         //     for (int j = 0; j < b; j++) {
-         //         for (int k = 0; k < c; k++) {
-         //             System.out.print(kubi[i][j][k] + " ");
-         //         }
-         //         System.out.println();
-         //     }
-         //     System.out.println();
-         // }
+         for (int i = 0; i < a; i++) {
+             for (int j = 0; j < b; j++) {
+                 for (int k = 0; k < c; k++) {
+                     System.out.print(kubi[i][j][k] + " ");
+                 }
+                 System.out.println();
+             }
+             System.out.println();
+         }
 
 
         char[] cipher = new char[text.length];
