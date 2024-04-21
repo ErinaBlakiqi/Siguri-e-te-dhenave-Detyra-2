@@ -114,8 +114,8 @@ Encrypt:
 ![image](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/19b4b8d3-8e07-47b9-ace9-6d5b13a4fe5a)
 
 Decrypt:
-![image](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/159d94f6-0b16-4ead-a81a-d1fa01f048c9)
 
+![Webp net-resizeimage](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/26d8e545-f93b-40b0-8c89-3ec4aa2bf0d7)
 
 
 
