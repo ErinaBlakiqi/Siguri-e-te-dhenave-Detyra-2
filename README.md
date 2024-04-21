@@ -89,8 +89,11 @@ EXAMPLES FROM EXCECUTION
  <img width="796" alt="trifidddddddd" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/155022915/09a1c032-9238-40d8-9310-42b2a4bb1a68">
 
  2. Trifid Ciper (Decryption)
-    <img width="796" alt="trifidddddddd" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/a981d612-2873-43e6-bf91-1293b4a27f03">
-4. Columnar Transposition (Encryption)
+
+     <img width="796" alt="trifidddddddd" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121411956/f60782f1-a7d7-4554-a5c4-6a25c5a4c7bd
+">
+
+3. Columnar Transposition (Encryption)
    
    <img width="695" alt="image" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/95575593/8bfc2794-3cac-4e47-941b-e9b24bd835e4">
    
@@ -99,7 +102,7 @@ EXAMPLES FROM EXCECUTION
    <img width="793" alt="image" src="https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/95575593/5234c34f-05c8-4f1e-a6f1-d82d366630f4">
    
 
-5. Columnar Transposition (Decryption)
+4. Columnar Transposition (Decryption)
 
 ![Screenshot 2024-04-21 020244](https://github.com/ErinaBlakiqi/Siguri-e-te-dhenave-Detyra-2/assets/121455234/e311984a-5f6e-4089-ba18-9eb853923e6c)
 
